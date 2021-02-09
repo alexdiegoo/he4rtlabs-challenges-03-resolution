@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  background: linear-gradient(0deg, #fff, #fff);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.container.on {
+  background: linear-gradient(0deg, #8550c2, #8550c2);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: toggle 0.5s alternate infinite;
+}
+
+form {
+  width: 350px;
+  margin: 0 auto;
+
+  padding: 20px;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#login.active,
+#register.active {
+  z-index: 100;
+  display: initial;
+  visibility: visible;
+}
+
+/*
+background-color: #8550c2;
+*/
+
+#login,
+#register {
+  -webkit-box-shadow: 1px 1px 11px -4px #000000; 
+  box-shadow: 1px 1px 11px -4px #000000;
+}
+
+#login {
+  border: 3px solid #000;
+  display: none;
+  visibility: hidden;
+}
+
+#register {
+  border: 3px solid #fff;
+
+  display: none;
+  visibility: hidden;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+legend {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#login legend {
+  color: #000;
+}
+
+#register legend {
+  color: #fff;
+}
+
+input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 3px;
+
+  margin-top: 10px;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-group {
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group p {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+#register p {
+  color: #fff;
+}
+
+.lg-button,
+.rg-button {
+  padding: 3px 7px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+
+  cursor: pointer;
+
+  transition: all .3s;
+}
+
+.lg-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.rg-button {
+  background-color: #fff;
+  color: #000;
+}
+
+.hello {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+
+  z-index: 150;
+  display: grid;
+  place-items: center;
+
+  clip-path: circle(0%);
+  animation: loggin 3s forwards;
+  animation-play-state: paused;
+}
+
+.hello h1 {
+  color: #693b9e;
+  font-size: 30px;
+  opacity: 0;
+}
+
+@keyframes toggle {
+  0% {
+    background-position-y: -100vh;
+  }
+
+  100% {
+    background-position-y: 0vh;
+  }
+}
+
+@keyframes loggin {
+  0% {
+    clip-path: circle(0%);
+  }
+
+  100% {
+    clip-path: circle(100%);
+  }
+}
+
+@keyframes opacity {
+  100% {
+    opacity: 1;
+  }
+}

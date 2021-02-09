@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <form id="login" class="active">
+      <fieldset>
+        <legend>Realizar Login</legend>
+        <div class="inputs">
+          <input type="email" placeholder="Digite seu email">
+          <input type="password" placeholder="Digite sua senha">
+        </div>
+        <div class="form-group">
+          <p>Ainda não possui conta? Clique <a class="goRegister">aqui</a></p>
+          <button type="submit" class="lg-button">Entrar</button>
+        </div>
+      </fieldset>
+    </form>
+
+
+    <form id="register">
+      <fieldset>
+        <legend>Criar Conta</legend>
+        <div class="inputs">
+          <input type="email" placeholder="Digite seu email">
+          <input type="password" placeholder="Digite sua senha">
+        </div>
+        <div class="form-group">
+          <p>Já possui uma conta? Clique <a class="goLogin">aqui</a></p>
+          <button type="submit" class="rg-button">Registrar</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="hello">
+    <h1 class="hello-text">Hello he4rt!</h1>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
