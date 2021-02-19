@@ -57,10 +57,6 @@ a {
   visibility: visible;
 }
 
-/*
-background-color: #8550c2;
-*/
-
 #login,
 #register {
   -webkit-box-shadow: 1px 1px 11px -4px #000000; 
@@ -149,6 +145,12 @@ input {
   color: #000;
 }
 
+.rg-button:hover {
+  background-color: #8550c2;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
 .hello {
   position: absolute;
   top: 0;
@@ -163,7 +165,7 @@ input {
   place-items: center;
 
   clip-path: circle(0%);
-  animation: loggin 3s forwards;
+  animation: login 3s forwards;
   animation-play-state: paused;
 }
 
@@ -183,7 +185,7 @@ input {
   }
 }
 
-@keyframes loggin {
+@keyframes login {
   0% {
     clip-path: circle(0%);
   }
